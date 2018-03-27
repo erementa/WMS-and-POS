@@ -19,7 +19,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Bootstrap Core CSS -->
 <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
 <!-- Custom CSS -->
-<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href="css/style-for-administrator.css" rel='stylesheet' type='text/css' />
 <!-- Graph CSS -->
 
 <!-- font icon CSS -->
@@ -38,43 +38,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <body>
 
 
-<div class="sidebar-menu"><!-- sidebar-menu -->
-    <header class="logo1">
-        <!-- <a href="#" class="sidebar-icon"><span class="fa fa-bars"></span></a>  -->
-    </header>
-    <div style="border-top:1px ridge rgba(255, 255, 255, 0.15)"></div>
-    <div class="menu">
-        <ul id="menu" >
-            <li><a href="index.html"><i class="fa fa-home"></i> <span>Home</span></a></li>
-            <li id="menu-academico" >
-                <a href="#">
-                    <i class="el el-glasses"></i>
-                    <span>Glasses</span> 
-                    <span class="fa fa-angle-right" style="float: right"></span>
-                </a>
-                <ul id="menu-academico-sub">
-                    <li id="menu-academico-avaliacoes" ><a href="glasses_a.html">Brand A</a></li>
-                    <li id="menu-academico-avaliacoes" ><a href="glasses_b.html">Brand B</a></li>
-                    <li id="menu-academico-boletim" ><a href="glasses_c.html">Brand C</a></li>
-                </ul>
-            </li>
-            
-        </ul>
-    </div><!-- //menu -->
-
-    <div class="menu">
-        <footer style="position:fixed; bottom: 0;">
-            <ul id="menu" >
-                <li id="menu-academico"><a href="pending_order.html"><i class="far fa-file-alt"></i><span>Pending Order</span></a></li>
-                <li id="menu-academico"><a href="administrator.html"><i class="fa fa-lock"></i> <span>Administrator</span></a></li>
-            </ul>
-        </footer>
-    </div>
-    
-</div><!-- //sidebar-menu -->
-
 <div class="left-content">
 <div class="inner-content">
+
 
     <div class="header-section"><!-- header-section -->
         <div class="top_bg">
@@ -95,22 +61,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <!-- start header_right -->
                 <div class="header_right">
                     <div class="rgt-bottom">
-                        
-                        <div class="cart box_1">
-                            <a href="cart.html">
-                                <h3> <span class="simpleCart_total">$0.00</span> 
-                                    (<span id="simpleCart_quantity" class="simpleCart_quantity">0</span> items)
-                                    <img src="images/bag.png" alt="">
-                                </h3>
-                                
-                            </a>	
-                            <p>&nbsp;</p>
-                            <div class="clearfix"> </div>
-                        </div>
-                        <div class="create_btn">
-                            <a href="checkout.html">CHECKOUT</a>
-                        </div>
-                        <div class="clearfix"> </div>
                         <div class="search">
                             <form>
                                 <input type="text" value="" placeholder="search...">
@@ -131,6 +81,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         <div class="women_main"><!-- women_main -->
             <div class="w_content"><!-- w_content -->
 
+                <!-- head of catagory -->
                 <div class="women">
                     <a href="#"><h4>Catalog - <span>150 items</span> </h4></a>
                     <ul class="w_nav">
@@ -145,16 +96,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="grids_of_4"><!-- grids_of_4 -->
                     <div class="grid1_of_4">
                         <div class="content_box">
-                            <a href="product/a_001.html">
+                            <a href="edit_product_a_001.html">
                                 <img src="img-product/a01.jpg" class="img-responsive" alt="">
                             </a>
-                            <h4><a href="product/a_001.html">A - 001</a></h4>
+                            <h4><a href="edit_product_a_001.html">A - 001</a></h4>
                             <p>It is a long established fact that</p>
-                            <div class="grid_1 simpleCart_shelfItem">
-                                <div class="item_add"><span class="item_price">
-                                    <button type="submit" class="btn btn-primary">add to cart</button>
-                                </span></div>
+
+                            <div class="panel-footer-admin-instock">
+                                <span class="text-admin-white">Stock : 10</span> 
                             </div>
+                            <div class="panel-footer-admin-inshop">
+                                <span class="text-admin-white">Shop : 15</span>
+                            </div>
+
                         </div>
                     </div>
                     <div class="grid1_of_4">
@@ -164,11 +118,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </a>
                             <h4><a href="#">A - 002</a></h4>
                             <p>It is a long established fact that</p>
-                            <div class="grid_1 simpleCart_shelfItem">
-                                <div class="item_add"><span class="item_price">
-                                        <button type="submit" class="btn btn-primary disabled">add to cart</button>
-                                </span></div>
-                            </div>
+                            <div class="panel-footer-admin-inempty">
+                                    <span class="text-admin-white">Stock : 0</span> 
+                                </div>
+                                <div class="panel-footer-admin-inshop">
+                                    <span class="text-admin-white">Shop : 15</span>
+                                </div>
                         </div>
                     </div>
                     <div class="grid1_of_4">
@@ -178,11 +133,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </a>
                             <h4><a href="#">A - 003</a></h4>
                             <p>It is a long established fact that</p>
-                            <div class="grid_1 simpleCart_shelfItem">
-                                    <div class="item_add"><span class="item_price">
-                                            <button type="submit" class="btn btn-primary disabled">add to cart</button>
-                                    </span></div>
-                            </div>
+                            <div class="panel-footer-admin-instock">
+                                    <span class="text-admin-white">Stock : 10</span> 
+                                </div>
+                                <div class="panel-footer-admin-inshop">
+                                    <span class="text-admin-white">Shop : 15</span>
+                                </div>
                         </div>
                     </div>
                     <div class="grid1_of_4">
@@ -192,10 +148,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </a>
                             <h4><a href="#">A - 004</a></h4>
                             <p>It is a long established fact that</p>
-                            <div class="grid_1 simpleCart_shelfItem">
-                                    <div class="item_add"><span class="item_price">
-                                            <button type="submit" class="btn btn-primary disabled">add to cart</button>
-                                    </span></div>
+                            <div class="panel-footer-admin-instock">
+                                <span class="text-admin-white">Stock : 10</span> 
+                            </div>
+                            <div class="panel-footer-admin-inshop">
+                                <span class="text-admin-white">Shop : 15</span>
                             </div>
                         </div>
                     </div>
@@ -211,10 +168,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </a>
                             <h4><a href="#">B - 001</a></h4>
                             <p>It is a long established fact that</p>
-                            <div class="grid_1 simpleCart_shelfItem">
-                                    <div class="item_add"><span class="item_price">
-                                            <button type="submit" class="btn btn-primary disabled">add to cart</button>
-                                    </span></div>
+                            <div class="panel-footer-admin-instock">
+                                <span class="text-admin-white">Stock : 10</span> 
+                            </div>
+                            <div class="panel-footer-admin-inshop">
+                                <span class="text-admin-white">Shop : 15</span>
                             </div>
                         </div>
                     </div>
@@ -225,10 +183,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </a>
                             <h4><a href="#">B - 002</a></h4>
                             <p>It is a long established fact that</p>
-                            <div class="grid_1 simpleCart_shelfItem">
-                                    <div class="item_add"><span class="item_price">
-                                            <button type="submit" class="btn btn-primary disabled">add to cart</button>
-                                    </span></div>
+                            <div class="panel-footer-admin-instock">
+                                <span class="text-admin-white">Stock : 10</span> 
+                            </div>
+                            <div class="panel-footer-admin-inshop">
+                                <span class="text-admin-white">Shop : 15</span>
                             </div>
                         </div>
                     </div>
@@ -239,10 +198,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </a>
                             <h4><a href="#">B - 003</a></h4>
                             <p>It is a long established fact that</p>
-                            <div class="grid_1 simpleCart_shelfItem">
-                                    <div class="item_add"><span class="item_price">
-                                            <button type="submit" class="btn btn-primary disabled">add to cart</button>
-                                    </span></div>
+                            <div class="panel-footer-admin-instock">
+                                <span class="text-admin-white">Stock : 10</span> 
+                            </div>
+                            <div class="panel-footer-admin-inshop">
+                                <span class="text-admin-white">Shop : 15</span>
                             </div>
                         </div>
                     </div>
@@ -253,10 +213,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </a>
                             <h4><a href="#">B - 004</a></h4>
                             <p>It is a long established fact that</p>
-                            <div class="grid_1 simpleCart_shelfItem">
-                                    <div class="item_add"><span class="item_price">
-                                            <button type="submit" class="btn btn-primary disabled">add to cart</button>
-                                    </span></div>
+                            <div class="panel-footer-admin-instock">
+                                <span class="text-admin-white">Stock : 10</span> 
+                            </div>
+                            <div class="panel-footer-admin-inshop">
+                                <span class="text-admin-white">Shop : 15</span>
                             </div>
                         </div>
                     </div>
@@ -272,10 +233,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </a>
                             <h4><a href="#">C - 001</a></h4>
                             <p>It is a long established fact that</p>
-                            <div class="grid_1 simpleCart_shelfItem">
-                                    <div class="item_add"><span class="item_price">
-                                            <button type="submit" class="btn btn-primary disabled">add to cart</button>
-                                    </span></div>
+                            <div class="panel-footer-admin-instock">
+                                <span class="text-admin-white">Stock : 10</span> 
+                            </div>
+                            <div class="panel-footer-admin-inshop">
+                                <span class="text-admin-white">Shop : 15</span>
                             </div>
                         </div>
                     </div>
@@ -286,10 +248,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </a>
                             <h4><a href="#">C - 002</a></h4>
                             <p>It is a long established fact that</p>
-                            <div class="grid_1 simpleCart_shelfItem">
-                                    <div class="item_add"><span class="item_price">
-                                            <button type="submit" class="btn btn-primary disabled">add to cart</button>
-                                    </span></div>
+                            <div class="panel-footer-admin-instock">
+                                <span class="text-admin-white">Stock : 10</span> 
+                            </div>
+                            <div class="panel-footer-admin-inshop">
+                                <span class="text-admin-white">Shop : 15</span>
                             </div>
                         </div>
                     </div>
@@ -300,10 +263,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </a>
                             <h4><a href="#">C - 003</a></h4>
                             <p>It is a long established fact that</p>
-                            <div class="grid_1 simpleCart_shelfItem">
-                                    <div class="item_add"><span class="item_price">
-                                            <button type="submit" class="btn btn-primary disabled">add to cart</button>
-                                    </span></div>
+                            <div class="panel-footer-admin-instock">
+                                <span class="text-admin-white">Stock : 10</span> 
+                            </div>
+                            <div class="panel-footer-admin-inshop">
+                                <span class="text-admin-white">Shop : 15</span>
                             </div>
                         </div>
                     </div>
@@ -314,10 +278,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </a>
                             <h4><a href="#">C - 004</a></h4>
                             <p>It is a long established fact that</p>
-                            <div class="grid_1 simpleCart_shelfItem">
-                                    <div class="item_add"><span class="item_price">
-                                            <button type="submit" class="btn btn-primary disabled">add to cart</button>
-                                    </span></div>
+                            <div class="panel-footer-admin-instock">
+                                <span class="text-admin-white">Stock : 10</span> 
+                            </div>
+                            <div class="panel-footer-admin-inshop">
+                                <span class="text-admin-white">Shop : 15</span>
                             </div>
                         </div>
                     </div>
@@ -334,10 +299,45 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     </div><!-- //content -->
 
 
-
-
 </div><!-- //inner-content-->
 </div><!-- //left-content-->
+
+
+<div class="sidebar-menu"><!-- sidebar-menu (Admin page) -->
+    <header class="logo1">
+        <!-- <a href="#" class="sidebar-icon"><span class="fa fa-bars"></span></a>  -->
+    </header>
+    <div style="border-top:1px ridge rgba(255, 255, 255, 0.15)"></div>
+    <div class="menu">
+        <ul id="menu" >
+            <!--  style="background:none" -->
+            <!-- <li><a href="index.html"><i class="fa fa-home"></i> <span>Home</span></a></li> -->
+            <li id="menu-academico" >
+                <a href="#">
+                    <i class="el el-glasses"></i>
+                    <span>Glasses</span> 
+                    <span class="fa fa-angle-right" style="float: right"></span>
+                </a>
+                <ul id="menu-academico-sub">
+                    <li id="menu-academico-avaliacoes" ><a href="glasses_a.html">Brand A</a></li>
+                    <li id="menu-academico-avaliacoes" ><a href="glasses_b.html">Brand B</a></li>
+                    <li id="menu-academico-boletim" ><a href="glasses_c.html">Brand C</a></li>
+                </ul>
+            </li>
+            
+        </ul>
+    </div><!-- //menu -->
+
+    <div class="menu">
+        <footer style="position:fixed; bottom: 0;">
+            <ul id="menu" >
+                <li id="menu-academico"><a href="pending_order.html"><i class="far fa-file-alt"></i><span>Pending Order</span></a></li>
+                <li id="menu-academico"><a href="index.html"><i class="fas fa-home"></i> <span>Home</span></a></li>
+            </ul>
+        </footer>
+    </div>
+    
+</div><!-- //sidebar-menu (Admin page) -->
 
 
 <script src="js/jquery.nicescroll.js"></script>

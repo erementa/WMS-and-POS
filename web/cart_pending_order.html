@@ -63,7 +63,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="rgt-bottom">
                         
                         <div class="cart box_1">
-                            <a href="checkout.html">
+                            <a href="../cart.html">
                                 <h3> <span class="simpleCart_total">$0.00</span> 
                                     (<span id="simpleCart_quantity" class="simpleCart_quantity">0</span> items)
                                     <img src="images/bag.png" alt="">
@@ -92,6 +92,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
     </div><!-- //header_bg -->
 
+
     <div class="content"><!-- content -->
         <div class="women_main"><!-- women_main -->
             <div class="check"><!-- check -->
@@ -105,13 +106,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         <span>Tel.</span>
                         <span class="total1">088 088 6645</span>
                         <h3>&nbsp;</h3>
+                        <div class="form-group has-success">
+                            <span class="control-label">Pending Date</span>
+                            <span class="control-label">27/03/2018</span>
+                        </div>
+                        <div class="form-group has-error">
+                            <span class="control-label">End Date</span>
+                            <span class="control-label">27/04/2018</span>
+                        </div>
+                        <h3>&nbsp;</h3>
                     </div>
-                    <!-- <div class="price-details">
-                        <h3>Price Details</h3>
-                        <span>Total</span>
-                        <span class="total1">8,000.00</span>
-                        <div class="clearfix"></div>				 
-                    </div>	 -->
                     <ul class="total_price">
                         <li class="last_price"><h4>TOTAL</h4></li>	
                         <li class="last_price"><span>8,000.00</span></li>
@@ -132,16 +136,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <h1>My Shopping Bag (2)</h1>
 
                     <!-- Cart 1 -->
-                    <script>$(document).ready(function(c) {
+                    <!-- <script>$(document).ready(function(c) {
                         $('.close1').on('click', function(c){
                             $('.cart-header').fadeOut('slow', function(c){
                                 $('.cart-header').remove();
                             });
                             });	  
                         });
-                    </script>
+                    </script> -->
                     <div class="cart-header"><!-- cart-header -->
-                        <div class="close1"> </div>
+                        <!-- <div class="close1"> </div> -->
                         <div class="cart-sec simpleCart_shelfItem">
                             <div class="cart-item cyc">
                                 <img src="img-product/a01.jpg" class="img-responsive" alt="">
@@ -152,31 +156,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <div class="form-group">
 
                                         <div class="col-md-3">
-                                            <ul class="qty">
-                                                <li><p><h4>In Stock : 10</h4></p></li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-3">
                                             <div class="input-group">
                                                 <div class="input-group-addon">
-                                                    <a class="active"><span>
-                                                        <i class="fas fa-minus"></i>
-                                                    </span></a>
+                                                        <span>Qty</span>
                                                 </div>
-                                                <input type="text" class="form-control" value="2">
-                                                <div class="input-group-addon">
-                                                    <a class="active"><span>
-                                                        <i class="fas fa-plus"></i>
-                                                    </span></a>
-                                                </div>
+                                                <input type="text" class="form-control1" value="2" disabled="">
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-md-6">
                                             <div class="input-group">
                                                 <div class="input-group-addon">
                                                     <span>Total</span>
                                                 </div>
-                                                <input type="text" class="form-control" value="4,000">
+                                                <input type="text" class="form-control1" value="4,000" disabled="">
                                                 <div class="input-group-addon">
                                                     <span>Baht</span>
                                                 </div>
@@ -195,16 +187,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <hr/>
 
                     <!-- Cart 2 -->
-                    <script>$(document).ready(function(c) {
+                    <!-- <script>$(document).ready(function(c) {
                         $('.close2').on('click', function(c){
                                 $('.cart-header2').fadeOut('slow', function(c){
                             $('.cart-header2').remove();
                         });
                         });	  
                         });
-                    </script>
+                    </script> -->
                     <div class="cart-header2"><!-- cart-header2 -->
-                        <div class="close2"> </div>
+                        <!-- <div class="close2"> </div> -->
                         <div class="cart-sec simpleCart_shelfItem">
                             <div class="cart-item cyc">
                                 <img src="img-product/a02.jpg" class="img-responsive" alt="">
@@ -213,32 +205,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <h3><a href="#">Brand B</a><span>Model No: B - 001</span></h3>
                                 <div class="det_nav1">
                                         <div class="form-group">
-                                            <div class="col-md-3">
-                                                <ul class="qty">
-                                                    <li><p><h4>In Stock : 10</h4></p></li>
-                                                </ul>
-                                            </div>
+
                                             <div class="col-md-3">
                                                 <div class="input-group">
                                                     <div class="input-group-addon">
-                                                        <a class="active"><span>
-                                                            <i class="fas fa-minus"></i>
-                                                        </span></a>
+                                                        <span>Qty</span>
                                                     </div>
-                                                    <input type="text" class="form-control" value="2">
-                                                    <div class="input-group-addon">
-                                                        <a class="active"><span>
-                                                            <i class="fas fa-plus"></i>
-                                                        </span></a>
-                                                    </div>
+                                                    <input type="text" class="form-control1" value="2" disabled="">
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="col-md-6">
                                                 <div class="input-group">
                                                     <div class="input-group-addon">
                                                         <span>Total</span>
                                                     </div>
-                                                    <input type="text" class="form-control" value="4,000">
+                                                    <input type="text" class="form-control1" value="4,000" disabled="">
                                                     <div class="input-group-addon">
                                                         <span>Baht</span>
                                                     </div>
@@ -269,7 +250,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 <div class="sidebar-menu"><!-- sidebar-menu -->
     <header class="logo1">
-        <a href="#" class="sidebar-icon"><span class="fa fa-bars"></span></a> 
+        <!-- <a href="#" class="sidebar-icon"><span class="fa fa-bars"></span></a>  -->
     </header>
     <div style="border-top:1px ridge rgba(255, 255, 255, 0.15)"></div>
     <div class="menu">
